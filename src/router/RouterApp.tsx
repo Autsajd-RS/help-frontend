@@ -5,7 +5,16 @@ const RouterApp = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<div>Test</div>} />
+        <Route index element={<div>Index page</div>} />
+        <Route path="login" element={<div>Login</div>} />
+        <Route path="admin">
+          <Route index element={<div>Pocetna admin</div>} />
+          <Route path="users" element={<div>Kreiraj korisnika</div>} />
+        </Route>
+        <Route path="ambulance">
+          <Route index element={<div>Pocetna hitna</div>} />
+          <Route path="patient" element={<div>Pocetna hitna</div>} />
+        </Route>
       </Route>
     </Routes>
   );
