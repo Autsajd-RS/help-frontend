@@ -1,6 +1,6 @@
 import { Provider } from 'react-redux';
 import { store } from './app-redux/store';
-import { Button, Checkbox, ConfigProvider, Form, Input } from 'antd';
+import { ConfigProvider } from 'antd';
 import './main.less';
 import RouterApp from 'router/RouterApp';
 import { BrowserRouter } from 'react-router-dom';

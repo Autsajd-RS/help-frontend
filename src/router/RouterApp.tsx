@@ -1,3 +1,4 @@
+import CreateUserForm from 'components/Forms/CreateUserForm';
 import Layout from 'components/Layout/Layout';
 import { Route, Routes } from 'react-router';
 
@@ -5,7 +6,7 @@ const RouterApp = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<div>Index page</div>} />
+        <Route index element={<CreateUserForm />} />
         <Route path="login" element={<div>Login</div>} />
         <Route path="admin">
           <Route index element={<div>Pocetna admin</div>} />
