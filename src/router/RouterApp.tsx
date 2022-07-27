@@ -11,6 +11,7 @@ const RouterApp = () => {
         <Route path="admin">
           <Route index element={<div>Pocetna admin</div>} />
           <Route path="users" element={<div>Kreiraj korisnika</div>} />
+          <Route path="create-user" element={<CreateUserForm />} />
         </Route>
         <Route path="ambulance">
           <Route index element={<div>Pocetna hitna</div>} />
